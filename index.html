@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bioko Works</title>
+
+  <!-- Fonts close to the mockups -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Flat-file setup (no css folder) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Bioko Works home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>BIOKO</strong><span>WORKS</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#clients">Clients</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero" data-section>
+      <div class="hero-bg" role="img" aria-label="Warehouse distribution centre background"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="pill">COMMERCIAL SOLUTIONS GROUP</div>
+
+          <h1 class="hero-title">
+            Where <span class="accent italic">Strategy</span><br />
+            Meets the <span class="muted italic">Shelf</span>
+          </h1>
+
+          <p class="hero-sub">
+            Bioko Works bridges the gap between commercial insight and physical execution.
+            We turn boardroom vision into retail reality across global markets.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#services">Explore Our Divisions</a>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="float-card edge">
+            <div class="float-icon">💡</div>
+            <div class="float-text">
+              <div class="float-kicker">BIOKO EDGE</div>
+              <div class="float-sub">STRATEGIC INSIGHT</div>
+            </div>
+          </div>
+
+          <div class="float-card reach">
+            <div class="float-icon">🛒</div>
+            <div class="float-text">
+              <div class="float-kicker">BIOKO REACH</div>
+              <div class="float-sub">MARKET EXECUTION</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about" data-section>
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="assets/wharehouse-shelves.jpg" alt="Warehouse shelves and logistics" />
+        </div>
+
+        <div class="about-copy">
+          <div class="kicker">MASTER BRAND</div>
+          <h2 class="h2">
+            More Than a Vendor,<br />
+            We Are Your <span class="accent">Growth Partner.</span>
+          </h2>
+
+          <p class="lead">
+            Bioko Works serves as our master identity, signaling credibility, intent, and operational capacity.
+            We don't just provide a service; we integrate ourselves into your commercial ecosystem to drive real-world results.
+          </p>
+
+          <div class="feature-cards">
+            <article class="mini-card">
+              <div class="mini-icon mini-icon-orange">⚡</div>
+              <h3>Operational Strength</h3>
+              <p>Built to make trade work with reliability and flawless execution.</p>
+            </article>
+
+            <article class="mini-card">
+              <div class="mini-icon mini-icon-blue">🛡️</div>
+              <h3>Deep Credibility</h3>
+              <p>Trusted by top retailers and global principals across high-growth markets.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services" data-section>
+      <div class="container center-head">
+        <h2 class="h2">One Partner. Two Specialist Arms.</h2>
+        <p class="subhead">
+          Strategic separation of execution and thinking to provide targeted solutions for every commercial need.
+        </p>
+
+        <div class="segmented" role="tablist" aria-label="Services tabs">
+          <button class="seg-btn is-active" type="button" role="tab" aria-selected="true" data-target="reachPanel">
+            <span class="seg-ic">🏢</span> BIOKO REACH
+          </button>
+          <button class="seg-btn" type="button" role="tab" aria-selected="false" data-target="edgePanel">
+            <span class="seg-ic">📊</span> BIOKO EDGE
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Reach -->
+        <div class="service-panel is-active" id="reachPanel" role="tabpanel">
+          <div class="service-card">
+            <div class="service-left">
+              <div class="quote-kicker">“EXTENDING YOUR BRAND’S REACH”</div>
+              <h3 class="h3">Distribution &amp; Physical Execution</h3>
+              <p class="body">
+                Bioko Reach speaks directly to market access and coverage. We provide the muscle required to get your
+                products from warehouse to shelf with precision.
+              </p>
+
+              <ul class="checklist">
+                <li>Market Access &amp; Coverage</li>
+                <li>Route-to-Market Strategy</li>
+                <li>Physical Execution in-market</li>
+                <li>Warehousing &amp; Logistics</li>
+              </ul>
+            </div>
+
+            <div class="service-right">
+              <img src="assets/distribution-warehouse.jpg" alt="Warehouse aisle for distribution and logistics" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Edge -->
+        <div class="service-panel" id="edgePanel" role="tabpanel">
+          <div class="service-card">
+            <div class="service-left">
+              <div class="quote-kicker">“TURNING INSIGHT INTO ADVANTAGE”</div>
+              <h3 class="h3">Advisory, Strategy &amp; Consulting</h3>
+              <p class="body">
+                Bioko Edge signals insight, intelligence, and sharper decision-making.
+                We balance execution-heavy operations with high-value strategic consulting.
+              </p>
+
+              <ul class="checklist dark">
+                <li>Commercial Advisory</li>
+                <li>Strategic Consulting</li>
+                <li>Data Analytics &amp; Insight</li>
+                <li>Market Intelligence</li>
+              </ul>
+            </div>
+
+            <div class="service-right">
+              <img src="assets/strategy-meeting.jpg" alt="Team workshop and strategy session" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS (ABOVE CONTACT) -->
+    <section id="clients" class="section clients" data-section>
+      <div class="container">
+        <p class="strip-title">TRUSTED BY INDUSTRY LEADERS</p>
+
+        <div class="logo-strip" aria-label="Client logos">
+          <div class="logo">STRAT LOGIC</div>
+          <div class="logo">APEX PRINCIPALS</div>
+          <div class="logo">MERCURY HUB</div>
+          <div class="logo">SOLARIS TRADING</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" data-section>
+      <div class="container">
+        <div class="contact-card">
+          <div class="sparkle" aria-hidden="true">✦</div>
+
+          <h2 class="h2">Let’s Start a Conversation.</h2>
+          <p class="subhead">Initiate your commercial evolution in seconds.</p>
+
+          <div class="sentence">
+            <span>I am a</span>
+
+            <!-- Custom select #1 -->
+            <div class="select" data-select>
+              <button class="select-btn is-orange" type="button" aria-expanded="false">
+                <span class="select-value">Principal</span>
+                <span class="chev" aria-hidden="true"></span>
+              </button>
+              <div class="select-menu" role="listbox" aria-label="Role">
+                <button type="button" class="opt is-active">Principal</button>
+                <button type="button" class="opt">Retailer</button>
+                <button type="button" class="opt">Wholesaler</button>
+                <button type="button" class="opt">Partner</button>
+              </div>
+            </div>
+
+            <span>looking to improve my</span>
+
+            <!-- Custom select #2 -->
+            <div class="select" data-select>
+              <button class="select-btn is-blue" type="button" aria-expanded="false">
+                <span class="select-value">Distribution</span>
+                <span class="chev" aria-hidden="true"></span>
+              </button>
+              <div class="select-menu" role="listbox" aria-label="Focus area">
+                <button type="button" class="opt is-active">Distribution</button>
+                <button type="button" class="opt">Execution</button>
+                <button type="button" class="opt">Strategy</button>
+                <button type="button" class="opt">Market Access</button>
+              </div>
+            </div>
+
+            <span>within the next quarter.</span>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <textarea name="message" rows="4" placeholder="Tell us more about your specific goals..." required></textarea>
+
+            <button class="btn btn-solution" type="submit">
+              Initiate Your Solution <span class="arrow" aria-hidden="true">→</span>
+            </button>
+          </form>
+
+          <div class="corner-star" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <a class="brand brand--footer" href="#home" aria-label="Bioko Works home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <strong>BIOKO</strong><span>WORKS</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="footer-mid">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">LinkedIn</a>
+        </div>
+
+        <div class="footer-right">
+          <span>© <span id="year"></span> Bioko Works Group. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Flat-file setup (no js folder) -->
+  <script src="script.js"></script>
+</body>
+</html>
