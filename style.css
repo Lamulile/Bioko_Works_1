@@ -1,4 +1,4 @@
-/* style.css (UPDATED — Accent switched to RED #E31E24 + logo prominence) */
+/* style.css (UPDATED — Accent switched to RED #E31E24 + Meet The Team layout fixed) */
 
 /* ----------------------------
    Reset + Base
@@ -180,8 +180,8 @@ h1, h2, h3{
 
 /* LOGO MORE PROMINENT */
 .brand-logo{
-  width: 40px;   /* +~50% */
-  height: 40px;  /* +~50% */
+  width: 40px;
+  height: 40px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.14);
@@ -370,7 +370,6 @@ h1, h2, h3{
   margin: auto;
 }
 
-
 /* ----------------------------
    OFFERINGS
 ---------------------------- */
@@ -476,6 +475,93 @@ h1, h2, h3{
 .mini-icon-blue{ background: rgba(43, 99, 255, 0.12); color: var(--blue); }
 
 /* ----------------------------
+   MEET THE TEAM (NEW — fixes heading + photo sizing + side-by-side)
+   Add class="team" to the team section or wrapper.
+---------------------------- */
+.team{
+  margin-top: 54px;
+}
+
+.team-title{
+  font-family: "Playfair Display", serif;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+}
+
+.team-kicker{
+  font-size: 12px;
+  letter-spacing: 0.30em;
+  font-weight: 900;
+  color: var(--orange);
+  margin: 0 0 10px;
+}
+
+/* If your "MEET THE TEAM" is using .kicker, this scopes it ONLY inside team */
+.team .kicker{
+  font-size: 12px;
+  letter-spacing: 0.30em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.team-card{
+  background: var(--panel);
+  border: 1px solid rgba(229,231,235,0.85);
+  border-radius: 22px;
+  box-shadow: var(--shadow-md);
+  padding: 18px;
+}
+
+.team-photo{
+  width: 100%;
+  height: 320px;               /* makes them consistent */
+  object-fit: contain;/* crops nicely instead of huge white space */
+  object-position: top center; /* keeps faces */
+  border-radius: 18px;
+  background: rgba(15,23,42,0.03);
+  border: 1px solid rgba(229,231,235,0.85);
+}
+
+/* Text under each person */
+.team-name{
+  margin: 12px 0 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.team-role{
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.team-bio{
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Team responsiveness */
+@media (max-width: 980px){
+  .team-grid{ grid-template-columns: 1fr; }
+  .team-photo{ height: 360px; }
+}
+
+/* ----------------------------
    DIVISIONS (Services)
 ---------------------------- */
 .services{ background: #f8fbff; }
@@ -538,61 +624,7 @@ h1, h2, h3{
   max-width: 520px;
 }
 
-/* Division bullet cards (already in your build) */
-.div-list{
-  display: grid;
-  gap: 12px;
-  margin-top: 18px;
-}
-
-.div-item{
-  display: grid;
-  grid-template-columns: 46px 1fr;
-  gap: 12px;
-  align-items: center;
-  padding: 14px 14px;
-  border-radius: 18px;
-  background: #0b1220;
-  color: #fff;
-  box-shadow: 0 18px 46px rgba(0,0,0,0.16);
-}
-
-.div-item .div-ic{
-  width: 46px;
-  height: 46px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.10);
-  font-weight: 900;
-}
-
-.div-title{
-  font-weight: 900;
-  font-size: 15px;
-}
-
-.div-sub{
-  opacity: 0.86;
-  font-size: 13.5px;
-  margin-top: 3px;
-}
-
-/* Dark variant used on Edge list */
-.div-list.dark .div-item{
-  background: #101827;
-}
-
-/* Image */
-.service-right img{
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.18);
-  object-fit: cover;
-}
-
-/* Divisions list cards (Reach / Edge) */
+/* Divisions list cards (Reach / Edge) — FIXED (single source of truth) */
 .div-list{
   list-style: none;
   padding: 0;
@@ -617,9 +649,33 @@ h1, h2, h3{
   height: 46px;
   border-radius: 14px;
   display: grid;
-  place-items: center; /* centers icon */
+  place-items: center;
   background: rgba(227, 30, 36, 0.10);
-  color: var(--orange); /* your red-accent token */
+  color: var(--orange);
+  border: 1px solid rgba(227, 30, 36, 0.18);
+}
+
+/* Support your HTML modifier classes too */
+.div-ic--reach{
+  background: rgba(227, 30, 36, 0.10);
+  color: var(--orange);
+  border: 1px solid rgba(227, 30, 36, 0.18);
+}
+.div-ic--edge{
+  background: rgba(43, 99, 255, 0.10);
+  color: var(--blue);
+  border: 1px solid rgba(43, 99, 255, 0.18);
+}
+
+/* If you want the whole list to “feel” different per division */
+.div-list--edge .div-ic{
+  background: rgba(43, 99, 255, 0.10);
+  color: var(--blue);
+  border: 1px solid rgba(43, 99, 255, 0.18);
+}
+.div-list--reach .div-ic{
+  background: rgba(227, 30, 36, 0.10);
+  color: var(--orange);
   border: 1px solid rgba(227, 30, 36, 0.18);
 }
 
@@ -641,6 +697,13 @@ h1, h2, h3{
   font-size: 13.5px;
 }
 
+/* Image */
+.service-right img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.18);
+  object-fit: cover;
+}
 
 /* ----------------------------
    CLIENTS
@@ -754,7 +817,6 @@ h1, h2, h3{
 @media (max-width: 560px){
   .client-card{ flex-basis: 280px; }
 }
-
 
 /* ----------------------------
    CONTACT
@@ -937,8 +999,8 @@ h1, h2, h3{
 }
 
 .footer-logo{
-  width: 52px;   /* +~50% */
-  height: 52px;  /* +~50% */
+  width: 52px;
+  height: 52px;
   object-fit: contain;
   border-radius: 12px;
 }
