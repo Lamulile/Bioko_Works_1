@@ -189,21 +189,3 @@ document.querySelectorAll("[data-carousel]").forEach((car) => {
     track.scrollBy({ left: step(), behavior: "smooth" });
   });
 });
-
-// Clients carousel buttons
-document.querySelectorAll("[data-carousel]").forEach((shell) => {
-  const track = shell.querySelector(".clients-track");
-  const prev = shell.querySelector(".car-prev");
-  const next = shell.querySelector(".car-next");
-
-  if (!track || !prev || !next) return;
-
-  const scrollByCard = (dir) => {
-    const card = track.querySelector(".client-card");
-    const amount = card ? card.offsetWidth + 16 : 320; // 16 = gap
-    track.scrollBy({ left: dir * amount, behavior: "smooth" });
-  };
-
-  prev.addEventListener("click", () => scrollByCard(-1));
-  next.addEventListener("click", () => scrollByCard(1));
-});
