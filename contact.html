@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bioko Works | Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="contact">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Bioko Works home">
+        <img class="brand-logo" src="assets/BIOKO WORKS LOGO.png" alt="Bioko Works logo" />
+        <div class="brand-text">
+          <div class="footer-brandtext">
+            <strong>Bioko Works</strong>
+            <span>BIOKO (PTY) LTD</span>
+          </div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html" data-page="home">Home</a>
+        <a class="nav-link" href="about.html" data-page="about">About</a>
+
+        <div class="nav-dd" data-page="divisions">
+          <button class="nav-link nav-dd-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            Divisions
+            <span class="nav-dd-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dd-menu" role="menu" aria-label="Divisions">
+            <a class="nav-dd-item" href="bioko-reach.html" role="menuitem" data-page="reach">Bioko Reach</a>
+            <a class="nav-dd-item" href="bioko-edge.html" role="menuitem" data-page="edge">Bioko Edge</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="offerings.html" data-page="offerings">Offerings</a>
+        <a class="nav-link" href="products.html" data-page="products">Products</a>
+        <a class="nav-link" href="contact.html" data-page="contact">Contact</a>
+        <a class="btn btn-primary btn-header" href="contact.html">Request a Call</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- CONTACT -->
+    <section class="section contact contact--new">
+      <div class="container contact-grid">
+        <div class="contact-left">
+          <div class="contact-pill">CONTACT</div>
+
+          <h2 class="contact-title">
+            Let’s make your<br />
+            brand work in-market.
+          </h2>
+
+          <p class="contact-lead">
+            Share what you need — promotions, activations, distribution, or advisory.
+            We'll respond with the next steps.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-ic">✉</div>
+              <div>
+                <div class="info-kicker">EMAIL</div>
+                <div class="info-main">info@biokoworks.co.za</div>
+                <div class="info-sub">Preferred contact email.</div>
+              </div>
+            </div>
+
+            <!-- Client requested cellphone -->
+            <div class="info-card">
+              <div class="info-ic">📱</div>
+              <div>
+                <div class="info-kicker">CELLPHONE</div>
+                <div class="info-main">079 860 9522</div>
+                <div class="info-sub">Call us directly.</div>
+              </div>
+            </div>
+
+            <!-- Client requested WhatsApp -->
+            <div class="info-card">
+              <div class="info-ic">💬</div>
+              <div>
+                <div class="info-kicker">WHATSAPP</div>
+                <div class="info-main">079 860 9522</div>
+                <div class="info-sub">Fast response on WhatsApp.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form-new" id="contactForm" novalidate>
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" name="fullName" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Company / Brand" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            </div>
+
+            <div class="field">
+              <label for="interest">I'm interested in</label>
+              <select id="interest" name="interest">
+                <option>Bioko Reach — Distribution &amp; Route-to-Market</option>
+                <option>Bioko Reach — Brand Activations</option>
+                <option>Bioko Edge — Advisory, Strategy &amp; Consulting</option>
+                <option>General enquiry</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what success looks like (stores, regions, timelines, products)..." required></textarea>
+            </div>
+
+            <button class="btn btn-enquiry" type="submit">Send Enquiry</button>
+            <p class="form-note">By submitting, you consent to be contacted regarding your enquiry (POPIA-aligned).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page pager -->
+    <div class="container">
+      <nav class="page-pager" aria-label="Page navigation">
+        <a class="pager-link prev" href="products.html">← Previous: Products</a>
+        <span></span>
+      </nav>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner footer-new">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <img class="footer-logo" src="assets/BIOKO WORKS LOGO.png" alt="Bioko Works logo" />
+          <div class="footer-brandtext">
+            <strong>Bioko Works</strong>
+            <span>BIOKO (PTY) LTD</span>
+          </div>
+        </div>
+
+        <p class="footer-blurb">
+          One partner, execution plus insight — <strong>Bioko Reach</strong> for route-to-market delivery and
+          <strong>Bioko Edge</strong> for advisory, strategy, and consulting.
+        </p>
+      </div>
+
+      <div class="footer-mid">
+        <div class="footer-col">
+          <div class="footer-col-title">LINKS</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="divisions.html">Divisions</a>
+          <a class="footer-link" href="offerings.html">Offerings</a>
+          <a class="footer-link" href="products.html">Products</a>
+          <a class="footer-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+
+<div class="footer-social">
+        <div class="footer-col-title">CONNECT WITH US</div>
+
+        <ul class="social-links" aria-label="Social links">
+          <li>
+            <a class="social-link" href="https://www.instagram.com/bioko.works" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/instagram.svg" alt="" /></span>
+              <span class="social-name">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.tiktok.com/@bioko.works" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/tiktok.svg" alt="" /></span>
+              <span class="social-name">TikTok</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.facebook.com/profile.php?id=61588310990713" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/facebook.svg" alt="" /></span>
+              <span class="social-name">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://x.com/BiokoWorks" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/x.svg" alt="" /></span>
+              <span class="social-name">X</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.linkedin.com/in/bioko-works-85bb0b3b0" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/linkedin.svg" alt="" /></span>
+              <span class="social-name">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Bioko Works (Bioko Pty) Ltd. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

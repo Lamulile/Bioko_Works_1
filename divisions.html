@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bioko Works | Divisions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="divisions">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Bioko Works home">
+        <img class="brand-logo" src="assets/BIOKO WORKS LOGO.png" alt="Bioko Works logo" />
+        <div class="brand-text">
+          <div class="footer-brandtext">
+            <strong>Bioko Works</strong>
+            <span>BIOKO (PTY) LTD</span>
+          </div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html" data-page="home">Home</a>
+        <a class="nav-link" href="about.html" data-page="about">About</a>
+
+        <div class="nav-dd" data-page="divisions">
+          <button class="nav-link nav-dd-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            Divisions
+            <span class="nav-dd-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dd-menu" role="menu" aria-label="Divisions">
+            <a class="nav-dd-item" href="bioko-reach.html" role="menuitem" data-page="reach">Bioko Reach</a>
+            <a class="nav-dd-item" href="bioko-edge.html" role="menuitem" data-page="edge">Bioko Edge</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="offerings.html" data-page="offerings">Offerings</a>
+        <a class="nav-link" href="products.html" data-page="products">Products</a>
+        <a class="nav-link" href="contact.html" data-page="contact">Contact</a>
+        <a class="btn btn-primary btn-header" href="contact.html">Request a Call</a>
+      </nav>
+
+    </div>
+  </header>
+
+  
+  <main>
+    <section class="section services">
+      <div class="container center-head">
+        <div class="kicker">DIVISIONS</div>
+        <h2 class="h2">Choose a Division</h2>
+        <p class="subhead">Select a division below to explore its dedicated page.</p>
+
+        <div class="division-selectWrap">
+          <label class="select-label" for="divisionJump">Choose a division</label>
+          <select id="divisionJump" class="division-select" aria-label="Select a division">
+            <option value="bioko-reach.html" selected>Bioko Reach — Distribution & Execution</option>
+            <option value="bioko-edge.html">Bioko Edge — Advisory, Strategy & Consulting</option>
+          </select>
+          <div class="division-jump-actions">
+            <a class="btn btn-primary" id="divisionGo" href="bioko-reach.html">Open Division</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <nav class="page-pager" aria-label="Page navigation">
+        <a class="pager-link prev" href="about.html">← Previous: About</a>
+        <a class="pager-link next" href="bioko-reach.html">Next: Bioko Reach →</a>
+      </nav>
+    </div>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner footer-new">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <img class="footer-logo" src="assets/BIOKO WORKS LOGO.png" alt="Bioko Works logo" />
+          <div class="footer-brandtext">
+            <strong>Bioko Works</strong>
+            <span>BIOKO (PTY) LTD</span>
+          </div>
+        </div>
+
+        <p class="footer-blurb">
+          One partner, execution plus insight — <strong>Bioko Reach</strong> for route-to-market delivery and
+          <strong>Bioko Edge</strong> for advisory, strategy, and consulting.
+        </p>
+      </div>
+
+      <div class="footer-mid">
+        <div class="footer-col">
+          <div class="footer-col-title">LINKS</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="divisions.html">Divisions</a>
+          <a class="footer-link" href="offerings.html">Offerings</a>
+          <a class="footer-link" href="products.html">Products</a>
+          <a class="footer-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <div class="footer-col-title">CONNECT WITH US</div>
+
+        <ul class="social-links" aria-label="Social links">
+          <li>
+            <a class="social-link" href="https://www.instagram.com/bioko.works" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/instagram.svg" alt="" /></span>
+              <span class="social-name">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.tiktok.com/@bioko.works" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/tiktok.svg" alt="" /></span>
+              <span class="social-name">TikTok</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.facebook.com/profile.php?id=61588310990713" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/facebook.svg" alt="" /></span>
+              <span class="social-name">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://x.com/BiokoWorks" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/x.svg" alt="" /></span>
+              <span class="social-name">X</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.linkedin.com/in/bioko-works-85bb0b3b0" target="_blank" rel="noopener">
+              <span class="social-ic" aria-hidden="true"><img src="assets/icons/linkedin.svg" alt="" /></span>
+              <span class="social-name">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Bioko Works (Bioko Pty) Ltd. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
