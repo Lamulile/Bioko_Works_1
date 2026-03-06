@@ -173,3 +173,32 @@ if (contactForm) {
   sel.addEventListener("change", sync);
 })();
 
+
+
+/* Activation carousel controls */
+const activationCarousel = document.getElementById('activationCarousel');
+const activationPrev = document.querySelector('.activation-nav--prev');
+const activationNext = document.querySelector('.activation-nav--next');
+
+if (activationCarousel && activationPrev && activationNext) {
+  const scrollAmount = () => {
+    const slide = activationCarousel.querySelector('.activation-slide');
+    if (!slide) return 320;
+    const gap = 18;
+    return slide.offsetWidth + gap;
+  };
+
+  activationPrev.addEventListener('click', () => {
+    activationCarousel.scrollBy({
+      left: -scrollAmount(),
+      behavior: 'smooth'
+    });
+  });
+
+  activationNext.addEventListener('click', () => {
+    activationCarousel.scrollBy({
+      left: scrollAmount(),
+      behavior: 'smooth'
+    });
+  });
+}
